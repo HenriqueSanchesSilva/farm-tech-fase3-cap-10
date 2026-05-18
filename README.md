@@ -1,4 +1,4 @@
-# FIAP - Faculdade de Informática e Administração Paulista
+# FIAP - Faculdade de Informatica e Administracao Paulista
 
 <p align="center">
 <a href="https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP" border="0" width=40% height=40%></a>
@@ -6,80 +6,79 @@
 
 <br>
 
-# 🌱 IA aplicada ao Agronegócio — Recomendação de Culturas
+# IA aplicada ao Agronegocio — Recomendacao de Culturas
 
 ## _(Nome do grupo)_
 
-## 👨‍🎓 Integrantes
+## Integrantes
 
-- <a href="#">Henrique Sanches Silva — RM 570527</a>
-- <a href="#">João — RM _(preencher)_</a>
-- <a href="#">Kayque — RM _(preencher)_</a>
-- <a href="#">Luis — RM _(preencher)_</a>
-- <a href="#">Patrick — RM _(preencher)_</a>
+- Henrique Sanches Silva — RM 570527
+- Luis Henrique Laurentino Boschi — RM 571352
+- Kayck Gabriel Evangelista da Silva — RM 572331
+- Patrick Borges de Melo — RM 574030
+- Joao Pedro Zavanela Andreu — RM 570231
 
-## 👩‍🏫 Professores
+## Professores
 
 ### Tutor(a)
 
-- <a href="#">_(preencher)_</a>
+- Sabrina Otoni
 
 ### Coordenador(a)
 
-- <a href="#">_(preencher)_</a>
+- Andre Godoi
 
 ---
 
-## 📜 Descrição
+## Descricao
 
-Este repositório contém a **base inicial do notebook do grupo** para a atividade do Capítulo 10, organizada para facilitar a divisão das entregas entre os integrantes.
+Este repositorio contem a entrega completa da atividade do Capitulo 10 (Fase 3) do grupo. O projeto utiliza o dataset `produtos_agricolas.csv` (2.200 amostras, 22 culturas e 7 variaveis ambientais: N, P, K, temperatura, umidade, pH e chuva) para analise de dados e construcao de modelos de classificacao supervisionada.
 
-O projeto utiliza o dataset `produtos_agricolas.csv` (2.200 amostras, 22 culturas e 7 variáveis ambientais: N, P, K, temperatura, umidade, pH e chuva) para uma futura análise de dados e construção de modelos de classificação.
+O notebook contempla as seguintes etapas entregues:
 
-Nesta versão, o foco é disponibilizar a estrutura do trabalho com seções preparadas para:
+- **Analise exploratoria** do dataset: verificacao de dimensoes, tipos, nulos, duplicados e estatisticas descritivas;
+- **Analise descritiva com graficos**: distribuicao das classes, histogramas das variaveis, boxplots, matriz de correlacao e perfil medio das culturas;
+- **Perfil ideal de solo/clima**: comparacao estatistica e visual entre tres culturas escolhidas (`coffee`, `cotton` e `rice`) e a media geral do dataset;
+- **5 modelos preditivos**: Regressao Logistica, KNN, Decision Tree, Random Forest e SVM (com selecao do melhor kernel), treinados seguindo boas praticas de Machine Learning (separacao treino/teste, escalonamento, encoding e metricas de avaliacao);
+- **Avaliacao comparativa**: tabela e grafico de barras com acuracia, precisao, recall e F1-score dos modelos, alem de matriz de confusao e classification report do modelo vencedor (Random Forest);
+- **Conclusoes**: pontos fortes, limitacoes e interpretacao dos resultados.
 
-- análise exploratória do dataset;
-- análise descritiva com gráficos;
-- definição do perfil ideal de solo e clima;
-- treinamento de modelos preditivos;
-- avaliação comparativa dos resultados.
-
-O desenvolvimento completo dessas etapas será preenchido pelo grupo ao longo da atividade.
+O dataset e balanceado (100 amostras por cultura), o que reduz o risco de vies forte nas metricas de classificacao.
 
 ---
 
-## 📁 Estrutura de pastas
+## Estrutura de pastas
 
 ```
 .
-├── assets/                       # Imagens (logo FIAP, gráficos exportados)
-├── src/                          # Código-fonte principal
-│   ├── HenriqueSanchesSilva_570527_fase3_cap2.ipynb   # Notebook do trabalho
-│   └── Atividade_Cap10_produtos_agricolas.csv                          # Dataset
+├── assets/                          # Imagens (logo FIAP, graficos exportados)
+├── src/                             # Codigo-fonte principal
+│   ├── HenriqueSanchesSilva_570527_fase3_cap2.ipynb   # Notebook completo da atividade
+│   └── Atividade_Cap10_produtos_agricolas.csv         # Dataset
 ├── .gitignore
-├── README.md                     # Este arquivo
-└── requirements.txt              # Dependências Python
+├── README.md                        # Este arquivo
+└── requirements.txt                 # Dependencias Python
 ```
 
 ---
 
-## 🔧 Como executar o código
+## Como executar o codigo
 
-### Pré-requisitos
+### Pre-requisitos
 
 - Python 3.10 ou superior
-- Jupyter Notebook ou JupyterLab (ou abrir o `.ipynb` no Google Colab / VS Code)
+- Jupyter Notebook, JupyterLab, VS Code ou Google Colab
 
-### Instalação
+### Instalacao local
 
-1. Clonar o repositório:
+1. Clonar o repositorio:
 
    ```bash
    git clone https://github.com/HenriqueSanchesSilva/farm-tech-fase3-cap-10.git
    cd farm-tech-fase3-cap-10
    ```
 
-2. Instalar as dependências:
+2. Instalar as dependencias:
 
    ```bash
    pip install -r requirements.txt
@@ -91,34 +90,41 @@ O desenvolvimento completo dessas etapas será preenchido pelo grupo ao longo da
    jupyter notebook src/HenriqueSanchesSilva_570527_fase3_cap2.ipynb
    ```
 
-4. Executar as células já disponíveis e usar a estrutura do notebook como base para o desenvolvimento das próximas etapas.
+4. Executar todas as celulas em ordem.
 
 ### Alternativa: Google Colab
 
-1. Abrir o notebook no Colab.
-2. Fazer upload do arquivo `produtos_agricolas.csv` no painel lateral.
-3. Executar todas as células.
+1. Fazer upload do arquivo `.ipynb` no Google Colab.
+2. Fazer upload do arquivo `Atividade_Cap10_produtos_agricolas.csv` no painel lateral (arquivos).
+3. Ajustar o path de leitura do CSV conforme a localizacao no ambiente Colab.
+4. Executar todas as celulas.
 
 ---
 
-## 📺 Vídeo de apresentação
+## Video de apresentacao
 
-🎥 _(link do YouTube — não listado — a adicionar após gravação)_
+_(link do YouTube — nao listado — a adicionar apos gravacao)_
 
 ---
 
-## 🗃 Histórico de lançamentos
+## Historico de lancamentos
 
 - 0.1.0 - 12/05/2026
-  - Criação do notebook base com estrutura de seções
-  - Estruturação do repositório seguindo template FIAP
+  - Criacao do notebook base com estrutura de secoes
+  - Estruturacao do repositorio seguindo template FIAP
 
 - 0.1.1 - 13/05/2026
   - Ajuste do README para refletir o status atual de notebook base
-  - Publicação da estrutura inicial para compartilhamento no GitHub
+  - Publicacao da estrutura inicial para compartilhamento no GitHub
+
+- 1.0.0 - 17/05/2026
+  - Entrega completa da atividade do Capitulo 10
+  - Analise exploratoria, descritiva com 5+ graficos, perfil ideal de 3 culturas
+  - Treinamento e comparacao de 5 modelos preditivos
+  - Conclusoes, pontos fortes e limitacoes documentados
 
 ---
 
-## 📋 Licença
+## Licenca
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> esta licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
