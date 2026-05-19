@@ -8,15 +8,15 @@
 
 # 🌱 IA aplicada ao Agronegócio — Recomendação de Culturas
 
-## _(Nome do grupo)_
+## _(Nome do grupo — preencher)_
 
 ## 👨‍🎓 Integrantes
 
-- <a href="#">Henrique Sanches Silva — RM 570527</a>
-- <a href="#">João — RM _(preencher)_</a>
-- <a href="#">Kayque — RM _(preencher)_</a>
-- <a href="#">Luis — RM _(preencher)_</a>
-- <a href="#">Patrick — RM _(preencher)_</a>
+- <a href="https://github.com/HenriqueSanchesSilva">Henrique Sanches Silva — RM 570527</a>
+- <a href="https://github.com/zjpza">João Pedro Zavanela Andreu — RM 570231</a>
+- <a href="https://github.com/Kayckxz">Kayck Gabriel Evangelista da Silva — RM 572331</a>
+- <a href="https://github.com/lhboschi">Luis Henrique Laurentino Boschi — RM 571352</a>
+- <a href="https://github.com/Trickmelo">Patrick Borges de Melo — RM 574030</a>
 
 ## 👩‍🏫 Professores
 
@@ -32,19 +32,30 @@
 
 ## 📜 Descrição
 
-Este repositório contém a **base inicial do notebook do grupo** para a atividade do Capítulo 10, organizada para facilitar a divisão das entregas entre os integrantes.
+Este repositório contém a entrega da atividade do **Capítulo 10 — A primeira técnica de aprendizado de máquina** da Fase 3 do curso TIAOA da FIAP, no contexto da startup fictícia **FarmTech Solutions**.
 
-O projeto utiliza o dataset `produtos_agricolas.csv` (2.200 amostras, 22 culturas e 7 variáveis ambientais: N, P, K, temperatura, umidade, pH e chuva) para uma futura análise de dados e construção de modelos de classificação.
+O projeto utiliza o dataset `Atividade_Cap10_produtos_agricolas.csv` (2.200 amostras, 22 culturas e 7 variáveis ambientais: N, P, K, temperatura, umidade, pH e chuva) para construir um sistema de **recomendação de culturas agrícolas** com base em condições de solo e clima.
 
-Nesta versão, o foco é disponibilizar a estrutura do trabalho com seções preparadas para:
+O notebook entregue cobre as seguintes etapas:
 
-- análise exploratória do dataset;
-- análise descritiva com gráficos;
-- definição do perfil ideal de solo e clima;
-- treinamento de modelos preditivos;
-- avaliação comparativa dos resultados.
+- **Análise exploratória** do dataset (dimensões, tipos, nulos, duplicados, estatísticas descritivas);
+- **Análise descritiva** com cinco conjuntos de visualizações (distribuição das classes, histogramas, boxplots, matriz de correlação e perfil comparativo entre culturas);
+- **Definição do perfil ideal de solo e clima**, com comparação detalhada entre três culturas escolhidas (`coffee`, `cotton` e `rice`) e a média geral do dataset;
+- **Treinamento de cinco modelos preditivos** (Regressão Logística, KNN, Decision Tree, Random Forest e SVM com três kernels);
+- **Avaliação comparativa** dos modelos com acurácia, precisão, recall e F1-score ponderado, matriz de confusão multiclasse e importância das features;
+- **Conclusões** com pontos fortes, limitações e sugestões de evolução.
 
-O desenvolvimento completo dessas etapas será preenchido pelo grupo ao longo da atividade.
+### 🏆 Principais resultados
+
+| Modelo              | Acurácia | F1-score |
+| ------------------- | -------- | -------- |
+| Random Forest       | 0,9955   | 0,9955   |
+| SVM (RBF)           | 0,9864   | 0,9863   |
+| Decision Tree       | 0,9795   | 0,9794   |
+| KNN                 | 0,9795   | 0,9794   |
+| Regressão Logística | 0,9409   | 0,9404   |
+
+O **Random Forest** apresentou o melhor desempenho, e as variáveis mais discriminantes foram `rainfall` e `humidity`, seguidas por `K` e `P`.
 
 ---
 
@@ -54,8 +65,8 @@ O desenvolvimento completo dessas etapas será preenchido pelo grupo ao longo da
 .
 ├── assets/                       # Imagens (logo FIAP, gráficos exportados)
 ├── src/                          # Código-fonte principal
-│   ├── HenriqueSanchesSilva_570527_fase3_cap2.ipynb   # Notebook do trabalho
-│   └── Atividade_Cap10_produtos_agricolas.csv                          # Dataset
+│   ├── HenriqueSanchesSilva_RM570527_fase3_cap10.ipynb   # Notebook do trabalho
+│   └── Atividade_Cap10_produtos_agricolas.csv            # Dataset
 ├── .gitignore
 ├── README.md                     # Este arquivo
 └── requirements.txt              # Dependências Python
@@ -88,34 +99,40 @@ O desenvolvimento completo dessas etapas será preenchido pelo grupo ao longo da
 3. Abrir o notebook:
 
    ```bash
-   jupyter notebook src/HenriqueSanchesSilva_570527_fase3_cap2.ipynb
+   jupyter notebook src/HenriqueSanchesSilva_RM570527_fase3_cap10.ipynb
    ```
 
-4. Executar as células já disponíveis e usar a estrutura do notebook como base para o desenvolvimento das próximas etapas.
+4. Executar todas as células do notebook (`Kernel → Restart & Run All`).
 
 ### Alternativa: Google Colab
 
 1. Abrir o notebook no Colab.
-2. Fazer upload do arquivo `produtos_agricolas.csv` no painel lateral.
+2. Fazer upload do arquivo `Atividade_Cap10_produtos_agricolas.csv` no painel lateral.
 3. Executar todas as células.
 
 ---
 
 ## 📺 Vídeo de apresentação
 
-🎥 _(link do YouTube — não listado — a adicionar após gravação)_
+🎥 _(link do YouTube — a adicionar após gravação)_
 
 ---
 
 ## 🗃 Histórico de lançamentos
 
-- 0.1.0 - 12/05/2026
-  - Criação do notebook base com estrutura de seções
-  - Estruturação do repositório seguindo template FIAP
+- **1.0.0 — 18/05/2026**
+  - Versão final entregue
+  - Notebook completo com análise exploratória, descritiva, perfil de culturas e cinco modelos preditivos
+  - Conclusões com pontos fortes e limitações
+  - README atualizado com integrantes, resultados e instruções de execução
 
-- 0.1.1 - 13/05/2026
+- 0.1.1 — 13/05/2026
   - Ajuste do README para refletir o status atual de notebook base
   - Publicação da estrutura inicial para compartilhamento no GitHub
+
+- 0.1.0 — 12/05/2026
+  - Criação do notebook base com estrutura de seções
+  - Estruturação do repositório seguindo template FIAP
 
 ---
 
