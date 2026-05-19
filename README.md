@@ -22,11 +22,11 @@
 
 ### Tutor(a)
 
-- <a href="#">_(preencher)_</a>
+- Sabrina Otoni
 
 ### Coordenador(a)
 
-- <a href="#">_(preencher)_</a>
+- André Godoi Chiovato
 
 ---
 
@@ -109,12 +109,6 @@ O **Random Forest** apresentou o melhor desempenho, e as variáveis mais discrim
 1. Abrir o notebook no Colab.
 2. Fazer upload do arquivo `Atividade_Cap10_produtos_agricolas.csv` no painel lateral.
 3. Executar todas as células.
-
----
-
-## 📺 Vídeo de apresentação
-
-🎥 _(link do YouTube — a adicionar após gravação)_
 
 ---
 
