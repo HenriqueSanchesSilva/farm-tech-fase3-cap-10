@@ -8,8 +8,6 @@
 
 # 🌱 IA aplicada ao Agronegócio — Recomendação de Culturas
 
-## _(Nome do grupo — preencher)_
-
 ## 👨‍🎓 Integrantes
 
 - <a href="https://github.com/HenriqueSanchesSilva">Henrique Sanches Silva — RM 570527</a>
